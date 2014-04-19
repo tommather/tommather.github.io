@@ -1,0 +1,86 @@
+@-webkit-keyframes tom {
+  0% {
+    -webkit-transform:
+      rotateZ(5deg) rotateX(5deg)
+      rotateY(0deg)
+      translateX(110%)
+      rotateY(0deg)
+      rotateX(-5deg) rotateZ(-5deg);
+  }
+
+  100% {
+    -webkit-transform:
+      rotateZ(5deg) rotateX(5deg)
+      rotateY(360deg)
+      translateX(110%)
+      rotateY(-360deg)
+      rotateX(-5deg) rotateZ(-5deg);
+  }
+}
+
+#tom {
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: tom;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes title-rotate {
+  0%   {-webkit-transform: rotateZ(-10deg);}
+  100% {-webkit-transform: rotateZ(10deg);}
+}
+
+@-webkit-keyframes title-scale {
+  0%   {-webkit-transform: scale(1.0);}
+  25%  {-webkit-transform: scale(1.4);}
+  50%  {-webkit-transform: scale(1.0);}
+  75%  {-webkit-transform: scale(1.2);}
+  100% {-webkit-transform: scale(1.0);}
+}
+
+#title-outer {
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: title-rotate;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+}
+
+#title {
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation-duration: 3.5s;
+  -webkit-animation-name: title-scale;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes com {
+  0%   {-webkit-transform: scale(0.0);}
+  100% {-webkit-transform: scale(4);}
+}
+
+#com {
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: com;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes background {
+  0%   {background: magenta;}
+  50%  {background: lime;}
+  25%  {background: yellow;}
+  75%  {background: aqua;}
+  100% {background: magenta;}
+}
+
+body {
+  -webkit-animation-duration:4s;
+  -webkit-animation-name: background;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
