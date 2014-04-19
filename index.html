@@ -1,0 +1,85 @@
+<style>
+
+@keyframes tomAaxis {
+  0% {
+    transform: rotateX(5deg) rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateX(5deg) rotateY(-360deg);
+  }
+}
+
+@keyframes tomA {
+  0% {
+    transform: rotateY(0deg) rotateX(-5deg);
+  }
+
+  100% {
+    transform: rotateY(360deg) rotateX(-5deg);
+  }
+}
+
+#tom-A-axis {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform-style: preserve-3d;
+  animation-duration: 3s;
+  animation-name: tomAaxis;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#tom-A {
+  position: relative;
+  left: -10em;
+
+  transform-style: preserve-3d;
+  animation-duration: 3s;
+  animation-name: tomA;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+@keyframes background {
+  0% {background: magenta;}
+  25% {background: yellow;}
+  50% {background: green;}
+  75% {background: blue;}
+  100% {background: magenta;}
+}
+
+body {
+  perspective: 40em;
+
+  animation-duration:2s;
+  animation-name: background;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+</style>
+
+<div id="tom-A-axis">
+  <div id="tom-A" class="orbit">
+    <img src='tom.png'>
+  </div>
+</div>
+
+
+<script>
+
+var tom = document.getElementById("tom-1");
+
+var update = function(timestamp) {
+
+  window.requestAnimationFrame(update);
+}
+
+//window.requestAnimationFrame(update);
+
+</script>
