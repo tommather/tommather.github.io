@@ -1,0 +1,112 @@
+@keyframes tom {
+  0% {
+    transform:
+      rotateZ(5deg) rotateX(5deg)
+      rotateY(0deg)
+      translateX(110%)
+      rotateY(0deg)
+      rotateX(-5deg) rotateZ(-5deg);
+  }
+
+  100% {
+    transform:
+      rotateZ(5deg) rotateX(5deg)
+      rotateY(360deg)
+      translateX(110%)
+      rotateY(-360deg)
+      rotateX(-5deg) rotateZ(-5deg);
+  }
+}
+
+#tom {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+
+  width: 30%;
+  margin-left: -15%;
+
+  transform-style: preserve-3d;
+  animation-duration: 3s;
+  animation-name: tom;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes title-rotate {
+  0%   {transform: rotateZ(-10deg);}
+  100% {transform: rotateZ(10deg);}
+}
+
+@keyframes title-scale {
+  0%   {transform: scale(1.0);}
+  25%  {transform: scale(1.4);}
+  50%  {transform: scale(1.0);}
+  75%  {transform: scale(1.2);}
+  100% {transform: scale(1.0);}
+}
+
+#title-outer {
+  position: fixed;
+  bottom: 50%;
+  width: 100%;
+
+  transform-style: preserve-3d;
+  animation-duration: 2s;
+  animation-name: title-rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+#title {
+  font-family: sans;
+  font-size: 32pt;
+  transform-style: preserve-3d;
+  animation-duration: 3.5s;
+  animation-name: title-scale;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes com {
+  0%   {transform: scale(0.0);}
+  100% {transform: scale(4);}
+}
+
+#com {
+  position: fixed;
+  top: 50%;
+  width: 100%;
+
+  transform-style: preserve-3d;
+  animation-duration: 2s;
+  animation-name: com;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+
+#contact-outer {
+  position: fixed;
+  width: 100%;
+  bottom: 25%;
+}
+
+@keyframes background {
+  0%   {background: magenta;}
+  50%  {background: lime;}
+  25%  {background: yellow;}
+  75%  {background: aqua;}
+  100% {background: magenta;}
+}
+
+body {
+  text-align: center;
+  perspective: 40em;
+
+  animation-duration:4s;
+  animation-name: background;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

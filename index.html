@@ -1,50 +1,21 @@
-<style>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Tom Mather</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
 
-@keyframes tom {
-  0% {
-    transform: rotateZ(5deg) rotateX(5deg) rotateY(0deg) translateX(100%) rotateY(0deg) rotateX(-5deg) rotateZ(-5deg);
-  }
+    <link href="main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <img id="tom" src='tom.png'>
+    <div id="title-outer">
+      <h1 id="title">Tom Mather</h1>
+    </div>
+    <h2 id="com">.com</h2>
 
-  100% {
-    transform: rotateZ(5deg) rotateX(5deg) rotateY(360deg) translateX(100%) rotateY(-360deg) rotateX(-5deg) rotateZ(-5deg);
-  }
-}
-
-#tom {
-  position: fixed;
-  top: 30%;
-  left: 50%;
-
-  width: 30%;
-  height: 30%;
-  margin-left: -15%;
-  margin-top: -15%;
-
-  transform-style: preserve-3d;
-  animation-duration: 3s;
-  animation-name: tom;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes background {
-  0% {background: magenta;}
-  25% {background: yellow;}
-  50% {background: green;}
-  75% {background: blue;}
-  100% {background: magenta;}
-}
-
-body {
-  perspective: 40em;
-
-  animation-duration:2s;
-  animation-name: background;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-
-</style>
-
-<img id="tom" src='tom.png'>
+    <div id="contact-outer">
+      <a id="contact" href="mailto:tommather@tommather.com">tommmather@tommather.com</a>
+    </div>
+  </body>
+</html>
