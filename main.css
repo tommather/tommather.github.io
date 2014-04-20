@@ -1,29 +1,29 @@
 @keyframes tom {
   0% {
     transform:
-      rotateZ(5deg) rotateX(5deg)
+      rotateX(-1deg)
       rotateY(0deg)
       translateX(110%)
       rotateY(0deg)
-      rotateX(-5deg) rotateZ(-5deg);
+      rotateX(1deg);
   }
 
   100% {
     transform:
-      rotateZ(5deg) rotateX(5deg)
+      rotateX(-1deg)
       rotateY(360deg)
       translateX(110%)
       rotateY(-360deg)
-      rotateX(-5deg) rotateZ(-5deg);
+      rotateX(1deg);
   }
 }
 
 #tom {
   position: fixed;
-  top: 10%;
+  top: 25%;
   left: 50%;
 
-  width: 30%;
+  height: 30%;
   margin-left: -15%;
 
   transform-style: preserve-3d;
