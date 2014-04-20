@@ -18,6 +18,9 @@
   }
 }
 
+#container {
+  -webkit-perspective: 40em;
+}
 #tom {
   -webkit-transform-style: preserve-3d;
   -webkit-animation-duration: 3s;
