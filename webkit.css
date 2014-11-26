@@ -89,3 +89,27 @@ body {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
 }
+
+@-webkit-keyframes snow-01 {
+  0% {background-position: 0 0;}
+  100% {background-position: 509px 1527px;}
+}
+
+#snow-01 {
+  -webkit-animation-duration: 19s;
+  -webkit-animation-name: snow-01;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes snow-02 {
+  0% {background-position: 0 0;}
+  100% {background-position: 778px 1176px;}
+}
+
+#snow-02 {
+  -webkit-animation-duration:31s;
+  -webkit-animation-name: snow-02;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
