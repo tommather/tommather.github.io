@@ -100,7 +100,7 @@
     bottom: 0;
     width: 100%;
     height: 128px;
-    background-image: url('fire.gif');
+    background-image: url('../img/fire.gif');
 }
 
 body {
@@ -124,7 +124,7 @@ body {
   width: 100%;
   height: 100%;
   background-size: 509px;
-  background-image: url("snowflakes-01.png");
+  background-image: url("../img/snowflakes-01.png");
 
   animation-duration: 19s;
   animation-name: snow-01;
@@ -142,7 +142,7 @@ body {
   width: 100%;
   height: 100%;
   background-size: 389px;
-  background-image: url("snowflakes-02.png");
+  background-image: url("../img/snowflakes-02.png");
 
   animation-duration:31s;
   animation-name: snow-02;
