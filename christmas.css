@@ -45,12 +45,12 @@
   animation-timing-function: linear;
 }
 
-@keyframes title-rotate {
+@keyframes greeting-rotate {
   0%   {transform: rotateZ(-10deg);}
   100% {transform: rotateZ(10deg);}
 }
 
-@keyframes title-scale {
+@keyframes greeting-scale {
   0%   {transform: scale(1.0);}
   25%  {transform: scale(1.4);}
   50%  {transform: scale(1.0);}
@@ -58,45 +58,27 @@
   100% {transform: scale(1.0);}
 }
 
-#title-outer {
+#greeting-outer {
   position: absolute;
   bottom: 50%;
   width: 100%;
 
   transform-style: preserve-3d;
   animation-duration: 2s;
-  animation-name: title-rotate;
+  animation-name: greeting-rotate;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation-direction: alternate;
 }
 
-#title {
+#greeting {
   font-family: sans;
   font-size: 32pt;
   transform-style: preserve-3d;
   animation-duration: 3.5s;
-  animation-name: title-scale;
+  animation-name: greeting-scale;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
-
-@keyframes com {
-  0%   {transform: scale(0.0);}
-  100% {transform: scale(4);}
-}
-
-#com {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-
-  transform-style: preserve-3d;
-  animation-duration: 2s;
-  animation-name: com;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-direction: alternate;
 }
 
 #contact-outer {

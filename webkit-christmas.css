@@ -31,12 +31,12 @@
   -webkit-animation-timing-function: linear;
 }
 
-@-webkit-keyframes title-rotate {
+@-webkit-keyframes greeting-rotate {
   0%   {-webkit-transform: rotateZ(-10deg);}
   100% {-webkit-transform: rotateZ(10deg);}
 }
 
-@-webkit-keyframes title-scale {
+@-webkit-keyframes greeting-scale {
   0%   {-webkit-transform: scale(1.0);}
   25%  {-webkit-transform: scale(1.4);}
   50%  {-webkit-transform: scale(1.0);}
@@ -44,35 +44,21 @@
   100% {-webkit-transform: scale(1.0);}
 }
 
-#title-outer {
+#greeting-outer {
   -webkit-transform-style: preserve-3d;
   -webkit-animation-duration: 2s;
-  -webkit-animation-name: title-rotate;
+  -webkit-animation-name: greeting-rotate;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-direction: alternate;
 }
 
-#title {
+#greeting {
   -webkit-transform-style: preserve-3d;
   -webkit-animation-duration: 3.5s;
-  -webkit-animation-name: title-scale;
+  -webkit-animation-name: greeting-scale;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-}
-
-@-webkit-keyframes com {
-  0%   {-webkit-transform: scale(0.0);}
-  100% {-webkit-transform: scale(4);}
-}
-
-#com {
-  -webkit-transform-style: preserve-3d;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-name: com;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in;
-  -webkit-animation-direction: alternate;
 }
 
 @-webkit-keyframes background {
