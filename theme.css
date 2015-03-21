@@ -1,0 +1,69 @@
+body, button, input, select, textarea {
+    font-size: 14px;
+    font-family: Georgia, serif;
+}
+
+body, button, input, select, textarea {
+    background: #fff;
+    color: #333;
+}
+
+a:visited,
+a {
+    color: #333;
+}
+
+a:hover {
+    color: #229;
+}
+
+pre,
+table.sourceCode {
+    background: #fdfdfd;
+    border-color: #ddd;
+}
+
+td.lineNumbers {
+    color: #888;
+    background: #fafafa;
+    border-right-color: #ddd;
+}
+
+code {
+    border: 1px solid #ddd;
+    background: #fdfdfd;
+}
+
+ul {
+    list-style: circle;
+}
+
+/* === Page Layout ========================================== */
+
+body {
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+    margin-top: 1.6em;
+    margin-bottom: 1.6em;
+}
+
+.thumbnail-project:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.thumbnail-project .thumbnail {
+    float: left;
+}
+
+.thumbnail-project .thumbnail img {
+    padding: 1px;
+    border: 1px solid black;
+    width: 120px;
+    margin-right: 1em;
+}
