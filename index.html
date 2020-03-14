@@ -1,28 +1,35 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Tom Mather</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-
-    <link href="main.css" rel="stylesheet" type="text/css">
-    <!--[if Webkit]<!-->
-    <link href="webkit.css" rel="stylesheet" type="text/css">
-    <!--<![endif]-->
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div id="container">
-      <img id="tom" src='tom.png'>
-      <div id="title-outer">
-        <h1 id="title">Tom Mather</h1>
+    <article class="profile" itemscope itemtype="http://schema.org/Person">
+      <div class="profile-picture">
+        <figure itemprop="image">
+          <picture>
+            <img src="img/profile.jpeg">
+          </picture>
+        </figure>
       </div>
-      <h2 id="com">.com</h2>
+      <div class="profile-body">
+        <h1 itemprop="name">Tom Mather</h1>
+        <p itemprop="description">
+          Poet and process engineer; stealer of hearts and slayer of dragons.
+        </p>
+        <dl>
+          <dt>Email</dt>
+          <dd itemprop="email"><a href="mailto:tommather@tommather.com">tommather@tommather.com</a></dd>
 
-      <div id="contact-outer">
-        <a id="contact" href="mailto:tommather@tommather.com">tommmather@tommather.com</a>
+          <dt>Phone</dt>
+          <dd itemprop="telephone"><a href="tel:+447542857584">07542 857584</a></dd>
+
+          <dt>LinkedIn</dt>
+          <dd><a href="https://www.linkedin.com/in/tom-mather-0485296a/">https://www.linkedin.com/in/tom-mather-0485296a/</a></dd>
+        </dl>
       </div>
-
-      <div id="fire"></div>
-    </div>
+    </article>
   </body>
 </html>
